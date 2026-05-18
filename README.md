@@ -92,3 +92,8 @@ uvicorn main:app --reload --host 127.0.0.1 --port 8080
 
 
 ```
+
+7.  Navigate to http://127.0.0.1:8080/docs
+
+8.  http://localhost:8080/docs
+9.  
