@@ -51,11 +51,11 @@ install python
 
 3. Install postgresql:
 
-set postgres db password --> admin123
+         set postgres db password --> admin123
 
-create a database --> fast_api_db
+         create a database --> fast_api_db
 
-postgresql://postgres:admin123@localhost:5432/fast_api_db
+         postgresql://postgres:admin123@localhost:5432/fast_api_db
 
 
 4. Install Dbever:
