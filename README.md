@@ -41,7 +41,7 @@ cd Hosiptal_ANgular/Backend/Fast_API_Postgresql
 
 2. Install dependencies:
    
-install python
+         install python
 
  ```bash
 
@@ -60,7 +60,7 @@ install python
 
 4. Install Dbever:
 
-CREATE DATABASE fast_api_db
+        CREATE DATABASE fast_api_db
 
 5. Create Tables
 
