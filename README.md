@@ -32,6 +32,12 @@ Follow these steps to set up the project locally:
 4. Navigate to http://localhost:4200
 
 ### Backend 
+1. Navigate to Backend/Fast_API_Postgresql Folder 
+
+```bash
+cd Hosiptal_ANgular/Backend/Fast_API_Postgresql
+
+```
 
 2. Install dependencies:
    
