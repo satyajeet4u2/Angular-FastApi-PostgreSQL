@@ -33,6 +33,8 @@ Follow these steps to set up the project locally:
 
 ### Backend 
 
+2. Install dependencies:
+   
 install python
 
  ```bash
@@ -41,7 +43,7 @@ install python
 
 ```
 
-install postgresql
+3. Install postgresql:
 
 set postgres db password --> admin123
 
@@ -49,10 +51,12 @@ create a database --> fast_api_db
 
 postgresql://postgres:admin123@localhost:5432/fast_api_db
 
-install dbever 
+
+4. Install Dbever:
 
 CREATE DATABASE fast_api_db
 
+5. Create Tables
 
 ```bash
 
@@ -70,6 +74,15 @@ import db, patientmodels
 ```bash
 
 db.create_tables()
+
+
+```
+
+
+6. Start the Backend application:
+```bash
+
+uvicorn main:app --reload --host 127.0.0.1 --port 8080
 
 
 ```
