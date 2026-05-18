@@ -12,7 +12,8 @@ Follow these steps to set up the project locally:
 
 ```bash
 
-    git clone https://github.com/Mauro-Pereira/inventory-front-end.git
+    git clone https://github.com/satyajeet4u2/Angular-FastApi-PostgreSQL
+
     cd Hosiptal_ANgular
 ```
 
