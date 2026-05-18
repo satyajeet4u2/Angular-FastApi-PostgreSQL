@@ -1,0 +1,12 @@
+setp---1 python -m venv venv
+step----2  install dbever 
+Step --3 set postgres db password --> admin123
+Step--4 postgresql://postgres:admin123@localhost:5432/fast_api_db
+Step---5  CREATE DATABASE fast_api_db; in script File
+Step---6  ipython cmd 
+step --7   import db, patientmodels, db.create_tables()
+
+start backend server--> uvicorn main:app --reload --host 127.0.0.1 --port 8080
+
+
+

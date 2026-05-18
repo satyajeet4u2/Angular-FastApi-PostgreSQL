@@ -1,0 +1,75 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header button-container">
+          <h5>Patients</h5>
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo" (click)="openModalAdd()">
+            ADD Patient
+          </button> -->
+          <button  matButton="outlined" (click)="openDialog()">ADD Patient</button>
+        </div>
+        <div class="card-body">
+          <!-- @if (loading) {
+                <div class="spinner">
+                  <p>Loading...</p>
+                </div>
+              } -->
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Medical History</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (patients of patients$ | async; track patients.id) {
+                <tr>
+                  <th scope="row">{{ patients.id }}</th>
+                  <td>{{ patients.name }}</td>
+                  <td>{{ patients.age }}</td>
+                  <td>{{ patients.email }}</td>
+                  <td>{{ patients.mobile }}</td>
+                  <td>{{ patients.medicalHistory }}</td>
+                  <td>
+                    <button type="button" class="btn btn-success" (click)="goToDetail(patients.id)">
+                      Detail
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      (click)="deleteProduct(patients.id)"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                  <td>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      data-bs-whatever="@mdo"
+                      (click)="openModalUpdate(patients)"
+                    >
+                      Update
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

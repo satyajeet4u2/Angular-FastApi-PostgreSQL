@@ -1,0 +1,71 @@
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="name-label" class="form-label">Patient Name</label>
+    <input
+      type="text"
+      formControlName="name"
+      class="form-control"
+      id="name-input"
+      placeholder="John Doe"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="age-label" class="form-label">Age</label>
+    <input
+      type="number"
+      formControlName="age"
+      class="form-control"
+      id="age-input"
+      placeholder="30"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="gender-label" class="form-label">Gender</label>
+    <input
+      type="text"
+      formControlName="gender"
+      class="form-control"
+      id="gender-input"
+      placeholder="Male/Female/Other"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="mobile-label" class="form-label">Mobile No</label>
+    <input
+      type="text"
+      formControlName="mobile"
+      class="form-control"
+      id="mobile-input"
+      placeholder="1234567890"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="email-label" class="form-label">Email</label>
+    <input
+      type="text"
+      formControlName="email"
+      class="form-control"
+      id="email-input"
+      placeholder="john.doe@example.com"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="medicalHistory-label" class="form-label">Medical History</label>
+    <textarea
+      class="form-control"
+      formControlName="medicalHistory"
+      id="medicalHistory"
+      rows="3"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    [disabled]="!patientForm.valid"
+    data-bs-dismiss="modal"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+</form>
